@@ -1,429 +1,543 @@
-*
-{
-margin:0;
-padding:0;
-box-sizing: border-box;
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* overflow: hidden; */
 }
 
-body
+body 
 {
-background-image: url(images\ \(21\).jpeg) ;
-/* width: 100%;
-height:100%; */
-/* overflow: hidden; */
-
+  background-image: url(back.jpeg);
+   width: 100%;
+    height:100%; 
+  /* overflow: hidden; */
+}
+.parentcontainer {
+  height:100%;
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
-
-
-.navbar
-{
-    background-color:transparent;
-    width:100%;
-    height:10vh;
-    Display:flex;
-    border-bottom: 0.1px solid white;
-    /* overflow: hidden; */
-  
+.navbar {
+  background-color: transparent;
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  border-bottom: 0.1px solid white;
+  /* overflow: hidden; */
 }
-.logo
-{
-  padding:2%;
-  Display:flex;
+.logo {
+  padding: 2%;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
-.logo img
-{
+.logo img {
   width: 100%;
   height: auto;
- position:center; 
- object-fit: contain;  
+  position: center;
+  object-fit: contain;
 }
-.leftbar
-{
+.leftbar {
   width: 30%;
-  padding:2%;
-  display:flex;
-  color:white;
-  justify-content:space-between;
+  padding: 2%;
+  display: flex;
+  color: white;
+  justify-content: space-between;
   align-items: center;
   /* gap:10%; */
 }
-.leftbar div
-{
-  width:1%;
-  padding:5%;
+.leftbar div {
+  width: 1%;
+  padding: 5%;
 }
-.rightbar 
-{
-width:20%;
-height:5%;
-background: transparent;
+.rightbar {
+  width: 20%;
+  height: 5%;
+  background: transparent;
 }
 
-.rightbar 
-{
-  position:absolute;
-  display:flex;
+.rightbar {
+  position: absolute;
+  display: flex;
   justify-content: center;
-  align-items:center ; 
-  top:3%;
+  align-items: center;
+  top: 3%;
   right: 5%;
   color: aqua;
-  /* background-color: #FF4D4D; */
-  gap:20%;
-
+  gap: 20%;
 }
- 
- .navbar .rightbar .loginbutton .firstbutton
-{
-   width:5vmax;
-  height:2vmax;
-  color: white;
-  background: transparent;
-  border-radius: 2%;
-} 
-.navbar .rightbar .joinbutton .secondbutton 
-{
-  width:5vmax;
-  height:2vmax;
-  color: white;
-  background: transparent;
-  border-radius: 2%;
 
+.navbar .rightbar .loginbutton .firstbutton {
+  width: 5vmax;
+  height: 2vmax;
+  color: white;
+  background: transparent;
+  border-radius: 2%;
+}
+.navbar .rightbar .joinbutton .secondbutton {
+  width: 5vmax;
+  height: 2vmax;
+  color: white;
+  background: transparent;
+  border-radius: 2%;
 }
 
 @media (min-width: 300px) {
-     /* CSS styles for screens with a width of 768px or less  */
+  /* CSS styles for screens with a width of 768px or less  */
   .logo {
-
     max-width: 80%;
-
-    }
   }
-  .maincontainer
-  {
-    width: 100vw;
-    height:100vh;
-  
-  }
-.firstcontainer
-{
- position:absolute; 
- display:flex;
-  flex-direction: column; 
- justify-content: center;
- /* align-content:flex-start; */
- align-items:center;
- width:70%;
- height:40%;
- /* background-color:blue;  */
- top:40%;
- left:20%;
- /* background-color: #FF4D4D; */
- 
-
+}
+.maincontainer {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.firstcontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: 70%;
+  height: 40%;
+  top: 40%;
+  left: 20%;
+  /* background-color: #FF4D4D; */
 }
 /* Responsive Properties */
 
 @media screen and (max-width: 500px) {
   /* CSS rules for screens with a width of 768px or less */
-  .rightbar, .leftbar {
-      display: none;
+  .rightbar,
+  .leftbar {
+    display: none;
   }
+}
 
-   }
+@media screen and (max-width: 500px) {
+  /* CSS rules for screens with a width of 768px or less */
+  .firstcontainer {
+    font-size: 2vmin;
+  }
+}
 
-   @media screen and (max-width: 500px) {
-    /* CSS rules for screens with a width of 768px or less */ 
-    .firstcontainer{
-   
-        font-size: 2vmin;  
-    }
-  
-  } 
-
-.firstcontainer
-{
-  
+.firstcontainer {
   padding-top: 6rem;
   padding-bottom: 6rem;
   line-height: 1.5;
-
 }
 
-
-.firstcontainer h1 span,h1
-{
-font-family: 'Inria Sans', sans-serif;;
-font-size:4vmax;
-color:white;
-position:center;
-line-height:1.5;
+.firstcontainer h1 span,
+h1 {
+  font-family: "Inria Sans", sans-serif;
+  font-size: 4vmax;
+  color: white;
+  position: center;
+  line-height: 1.5;
 }
-.firstcontainer p
-{
-color:white;
-padding-top:1em;
+.firstcontainer p {
+  color: white;
+  padding-top: 1em;
 }
-.startedbutton
-
-{
+.startedbutton {
   padding-top: 4%;
   border-radius: 10%;
   /* overflow: scroll;  */
-
 }
-.startedbutton
-{
-  width:15%;
-  height: auto; 
+.startedbutton {
+  width: 15%;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.firstcontainer .startedbutton .startbutton
-{
- width:200%;
- height: 200%;
-   background-color: #FF4D4D;  
- color:white;
-  border-radius:10px; 
-   padding-top: 4%;
- overflow: scroll;
- font-size: 1vmax;
- 
+.firstcontainer .startedbutton .startbutton {
+  width: 200%;
+  height: 200%;
+  background-color: #ff4d4d;
+  color: white;
+  border-radius: 10px;
+  padding-top: 4%;
+  overflow: scroll;
+  font-size: 1vmax;
 }
 
-
 @media screen and (max-width: 500px) {
-  /* CSS rules for screens with a width of 768px or less */ 
-  .firstcontainer .h1 span,p,h1{
-     padding-left:2% ;
-     padding-right:2%; 
+  /* CSS rules for screens with a width of 768px or less */
+  .firstcontainer .h1 span,
+  p,
+  h1 {
+    padding-left: 2%;
+    padding-right: 2%;
   }
-  p{
+  p {
     font-size: 2vmax;
   }
-  .firstcontainer .startedbutton .startbutton
-  {
+  .firstcontainer .startedbutton .startbutton {
     margin-top: 2%;
-
   }
-
 }
 
 @media screen and (max-width: 500px) {
-  /* CSS rules for screens with a width of 768px or less */ 
-  .firstcontainer{
-     margin:2% ;
-     
+  /* CSS rules for screens with a width of 768px or less */
+  .firstcontainer {
+    margin: 2%;
   }
-
-
 }
 
-.secondcontainer
-{
-   /* position: absolute;  */
+.secondcontainer {
+  /* position: absolute;  */
   width: 90%;
-  height:60%;
-  background-image:url(bgdone.jpeg); 
+  height: 60%;
+  background-image: url(bgdone.jpeg);
   border-radius: 2%;
-   margin:5%;  
+  margin: 5%;
   /* left:5%; */
-  color:white;
-  display:flex ;
+  color: white;
+  display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: flex-start;  
-
+  justify-content: flex-start;
 }
-.paragraphcontainer
-{
-   width:50%;
-   height:100%;
-   display: inline-block;  
-   /* background-color: #FF4D4D; */
-   margin:5%;
-   padding:2%;
-   line-height: 1.5;
-   padding-top: 2%;
-   overflow-wrap: break-word;
-   width: fit-content;
-   block-size:fit-content;
-
-   /* background-image:url(bgdone.jpeg); */
-}
-.paragraphcontainer p
-{
+.paragraphcontainer {
+  width: 50%;
+  height: 100%;
+  display: inline-block;
+  /* background-color: #FF4D4D; */
+  margin: 5%;
+  padding: 2%;
+  line-height: 1.5;
   padding-top: 2%;
+  overflow-wrap: break-word;
+  width: fit-content;
+  block-size: fit-content;
 
+  /* background-image:url(bgdone.jpeg); */
+}
+.paragraphcontainer p {
+  padding-top: 2%;
 }
 
-.imagecontainer
-{
-      box-sizing: border-box;
-    display: flex ;
-    flex-direction: row;
-    justify-content:flex-end;
-     align-items: center;  
-      /* position: absolute;   */
-     /* display: inline-block; */
-     width:70%;
-     height:100%;
-     border-radius: 10%;
-      /* background-color: aqua;  */
-      padding:2%;
-      padding-right: 0%;
-      
+.imagecontainer {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  /* display: inline-block; */
+  width: 70%;
+  height: 100%;
+  border-radius: 10%;
+  /* background-color: aqua;  */
+  padding: 2%;
+  padding-right: 0%;
 }
 
-.imagecontainer img
-{
- object-fit: contain;
-   max-width:100%; 
-    height:100%; 
-    border-radius: 10%;
-
+.imagecontainer img {
+  object-fit: contain;
+  max-width: 100%;
+  height: 100%;
+  border-radius: 10%;
 }
-
 
 @media screen and (max-width: 500px) {
-  /* CSS rules for screens with a width of 768px or less */ 
-  .secondcontainer h1,p{
-     font:4vmax;  
+  /* CSS rules for screens with a width of 768px or less */
+  .secondcontainer h1,
+  p {
+    font: 4vmax;
   }
-  .secondcontainer
-  {
+  .secondcontainer {
     flex-direction: column;
-     
   }
 
-  .secondcontainer
-  {
+  .secondcontainer {
     /* width:100vmax; */
-     height: 60%; 
-     width:80%;
-     margin:2%;
+    height: 60%;
+    width: 80%;
+    margin: 2%;
   }
-  .secondcontainer .imagecontainer .image-container
-  {
-   width:80%;
-
+  .secondcontainer .imagecontainer .image-container {
+    width: 80%;
   }
 }
 
-.thirdtopcontainer
-{
-  position: absolute;
-    /* width:200px; */
-   /* height:900px;  */
-     width: 100%; 
-     height:100%;   
-   /* background-color: aqua;  */
-     display: flex;
-     flex-direction: row;
-     flex-wrap: nowrap;
-     justify-content:flex-start ;
-     margin:2%;
-     gap:5%;
-     background:transparent ;
-
-
-} 
-
- .thirdcontainer
-{
-  display:flex;
-  flex-wrap:wrap;
-  flex-direction:row;
+.thirdtopcontainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: flex-start;
+  margin: 2%;
+  gap: 5%;
+  background: transparent;
+}
+
+.thirdcontainerA {
+  width: 30%;
+  height: 80vh;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
   /*background-color: #FF4D4D; */
-   background-image:url(backgroundcolour.jpeg);
-   width:30%;
-   height:80%;
-   left:5%;
-   white-space: nowrap; 
-   border-radius: 2%;
-   margin-left:10% ;
-   padding:10%;
-   color:white;
-   
-   /* width: fit-content;
+  background-image: url(backgr.jpeg);
+  /* white-space: nowrap;  */
+  border-radius: 2%;
+  margin-left: 10%;
+  padding: 2%;
+  color: white;
+  padding-bottom: 2%;
+  gap: 10%;
+  /* width: fit-content;
    block-size:fit-content; */
 }
- .paratwo
-{
-  /* position: absolute; */
-  width:80%;
-  height:auto;
-  display: flex;  
-  justify-content:flex-start ;
+.paratwo {
+  width: 80%;
+  height: auto;
+  gap: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: flex-start;
-  margin:2%;
+  margin: 2%;
   /* padding:2%; */
-  line-height: 1.5;  
-  background-color:yellow;
-
+  line-height: 2;
+  font-family: sans-serif;
   /* overflow-wrap: break-word;
   width: fit-content;
+ 
   block-size:fit-content; */
-
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.fourthcontainer
-{
- display:flex;
-flex-direction: row;
-justify-content: flex-end; 
-width:40%;
-height:80%;
-background-color: aliceblue;
-border-radius:2%;
-background-image:url(backgroundcolour.jpeg) ;
-}
-
-/* 
 @media screen and (max-width: 500px) {
-  /* CSS rules for screens with a width of 768px or less 
-  .thirdtopcontainer
-  {
-    width:100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
-     
+  /* CSS rules for screens with a width of 768px or less */
+  .thirdcontainerA {
+    width: 100vw;
+    margin-top: 5%;
   }
+  .paratwo p {
+    font: 4vmax;
+    overflow-wrap: break-word;
+    width: fit-content;
+    block-size: fit-content;
+    overflow: hidden;
+  }
+}
+
+/* .paratwo 
+{
+  font-size: 2vw;
+  padding-top: 2%;
+     
+} */
+
+.thirdcontainerB {
+  width: 50%;
+  height: 80vh;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  /* background-color: #FF4D4D;  */
+  background-image: url(backgr.jpeg);
+  /* white-space: nowrap;  */
+  border-radius: 2%;
+  background-color: transparent;
+  padding: 4%;
+  color: white;
+  padding-bottom: 2%;
+  gap: 10%;
+  line-height: 2;
+  /* width: fit-content; */
+   /* block-size:fit-content;  */
+}
+
+.imageB {
+  width: 100%;
+  height: 50%;
+  object-fit: contain;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+@media screen and (max-width: 500px) {
+  /* CSS rules for screens with a width of 768px or less */
+  .thirdcontainerB {
+    width: 100vw;
+    margin-top: 5%;
+    margin: 5%;
+    padding: 10%;
+    gap:10%;
+
+  }
+  .thirdcontainerB
+  {
+    width: fit-content; 
+   block-size:fit-content; 
+
+
+  }
+  /* .paratwo p{
+     font:4vmax;  
+     overflow-wrap: break-word;
+     width: fit-content;
+    block-size:fit-content;
+      overflow:hidden;
+   } */
+}
+
+.fourthcontainer {
+  width: 60%;
+  height: 20%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding:2%;
+  margin-left: 20%;
+  margin-top:10%;
+  gap:10%;
+  /* background-color: aliceblue; */
+  border-radius: 2%;
+  color: azure;
+  background-color: #ff4d4d;
+   overflow: initial;
+}
+
+/* .fourthcontainer h2
+{
+
+
 } */
 
 
+.fourthcontainer p
+{
+word-wrap: wrap;
+line-height: 1.5;
+font-size: 1.5em;
+}
+
+
+@media screen and (max-width: 500px) {
+  /* CSS rules for screens with a width of 768px or less  */ 
+  .fourthcontainer p,h2
+  {
+    width:100%;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;  
+    overflow-wrap: break-word; 
+    width: fit-content;
+    block-size:fit-content;
+    overflow: hidden;
+    gap:10%;
+    /* font:2vmax; */   
+  }
+.fourthcontainer
+{
+  
+  height:70vh;
+  width:80%;
+  
+}
+
+
+}
 
 .fifthcontainer
+ {
+
+  width:80%;
+  height:20vh;
+  display:flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;  
+  margin-top: 10%; 
+  margin-left:10%;
+  border-radius:2%;
+  /* align-items: ; */
+  background-color: aqua;  
+  border-radius:4%;
+
+}
+
+.fifthcontainer  div
 {
 
+width:40%;
+height:80%;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+background-color: #ff4d4c;
+border-radius:10px solid yellow;
+
+}
+
+.sixthmaincontainer
+{
+width:100%;
+height:100%;
+display: flex;
+margin-top: 10%;
+justify-self: center;
+ /* background-color: blue;   */
+  background: transparent;  
+ gap:10%;
+ padding:10%;
+
+}
+
+.sixthA
+{
+ /* background-color: #ff4d4c; */
+   background:transparent; 
+  color:white;
   width:100%;
-  height:100%;
-background-color: blue;
-} 
+  height:100vh;
+  margin-left:10% ; 
+  border-radius: 5%;
+  margin-bottom:10%;
+   font-size:1 rem;
+  
+}
+.sixthB
+{
+ background: transparent; 
+ width:80vh;
+ height:80%;
+ color: white;
+ object-fit:cover;
+
+ 
+
+
+
+
+
+
+}
+
+
+
+
